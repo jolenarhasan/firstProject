@@ -19,7 +19,11 @@ nav .end-options .counterFont {
 nav .search i {
   cursor: pointer;
 }
-
+.content{
+  padding-top: 15%;
+  width: 350px;;
+ 
+}
 
 .content span {
   font-size: 16px;
@@ -32,9 +36,11 @@ nav .search i {
 
 .content h2 {
   color: #111111;
-  font-size: 43px;
+  font-size: 45px;
   line-height: 60px;
   font-family: "Libre Baskerville", serif;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .primary-btn {
@@ -48,12 +54,27 @@ nav .search i {
   padding: 14px 30px 12px;
   border-radius: 50px;
 }
-.content{
-  padding-top: 15%;
-  width: 300px;;
- 
-}
-.content a{
 
+.content a{
+  
   text-decoration: none;
+}
+.carousel-indicators button{
+  width: 10px;
+  height: 10px;
+  
+  background-color:var(--mainColor);
+}
+.carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: sticky;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+ color:var(--mainColor);
+ background-color: #ffffff;
 }
