@@ -23,7 +23,7 @@ body {
   padding: 14px 30px 12px;
   border-radius: 50px;
 }
-h4 {
+h4{
   font-weight: 400;
   font-family: "Libre Baskerville", serif;
   line-height: 1.2;
@@ -183,4 +183,29 @@ nav .search i {
     line-height: 30px;
     margin-bottom: 30px;
 }
+.arrival-title span{
+  
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 8px;
+}
+.arrival-title h2{
+  font-size: 42px;
+  line-height: 1.4;
+  font-family: "Libre Baskerville", serif;
+}
+.item-content h5{
+  font-size: 18px;
+  font-family: "Libre Baskerville", serif;
+}
+.item-content span{
 
+    font-size: 16px;
+    
+    position: relative;
+    left: 0;
+  }
