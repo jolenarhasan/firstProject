@@ -6,21 +6,19 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
-body {
-  height: 10000px;
-}
+
 .text-mainColor {
   color: var(--mainColor);
 }
 .primary-btn {
-  display: inline-block;
+  
   font-size: 15px;
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   background: #f45d96;
-  padding: 14px 30px 12px;
+  padding: 12px 30px 12px;
   border-radius: 50px;
 }
 h4{
@@ -46,6 +44,8 @@ nav .end-options .counterFont {
 nav .search i {
   cursor: pointer;
 }
+
+
 .content {
   padding-top: 15%;
   width: 350px;
@@ -209,3 +209,257 @@ nav .search i {
     position: relative;
     left: 0;
   }
+  
+  .nav-tabs {
+    
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-link-hover-border-color: none !important;
+}
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+    border-radius: 20px;
+  }
+    .nav-link { 
+      color: black;
+  }
+  .arrival .nav-link:hover{
+    color:var(--mainColor);
+    border-color: var(--mainColor);
+    border-radius: 20px;
+  }
+  .custom-flower .custom-flower-text{
+    padding-top:15%  ;
+  }
+.custom-flower-text span{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;}
+    .custom-flower-text h2{
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 1.4;
+    margin-bottom: 42px;
+    font-family: "Hello Santtiny";
+  }
+    .primary-btn.white-btn
+{
+      color: #f45d96;
+      background: #ffffff;
+      
+  }
+  .custom-btn{
+width: 200px;
+  }
+
+  .primary-btn.border-btn {
+    background: transparent;
+    color: #111111;
+    border: 2px solid #f45d96;
+}
+.card-body {
+  text-align: center;
+  position: relative;
+  padding: 38px 35px 30px;
+}
+ .card-body .label {
+  position: absolute;
+  left: 0;
+  top: -13px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.card-body .label span {
+  color: #ffffff;
+  background: #111111;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px 2px;
+  display: inline-block;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+  .card-body span {
+  font-size: 14px;
+  color: #888888;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.card-body h3 a {
+  font-family: "Libre Baskerville", serif;
+  color: #111111;
+  line-height: 31px;
+}
+.card-body a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+  
+}
+.card-body .label span:hover {
+  color:#ffffff;
+  background-color: var(--mainColor);
+  
+}
+.card-body p{
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #444444;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 15px 0;
+}
+.card:hover .label span {
+  color: white;
+  background-color: #f45d96;
+}
+
+.card:hover .card-body h3 a {
+  text-decoration: underline;
+}
+.latest-post-title span {
+  color: #f45d96;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 8px;
+}
+.latest-post-title h2{
+font-size: 42px;
+font-family: "Libre Baskerville", serif;
+ line-height: 1.4;
+}
+.all-btn {
+  
+  text-align: right;
+}
+.testimonial .carousel-caption p {
+  color: #444444;
+  font-size: 23px;
+  font-style: italic;
+  line-height: 1.8;
+  font-family: "Libre Baskerville", serif;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+.carousel-caption {
+  bottom: 5rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  top: 50%;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  
+  background-color:var(--mainColor);
+}
+.carousel-control-next {
+  right: 20px;
+}
+.carousel-control-prev {
+  left: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color:var(--mainColor);
+}
+.insta-item-hover{
+  padding: 20px 30px 16px;
+  width: 200px;;
+
+}
+
+.insta-item-hover h6 a{
+  color:#111111;
+}
+
+.insta-item-hover h6{
+  font-family: "Libre Baskerville", serif;
+}
+
+.moreOnInsta {
+  position: relative; 
+  overflow: hidden; 
+}
+
+.insta-item-hover {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 15px 20px; 
+  border-radius: 8px; 
+  visibility: hidden; 
+  opacity: 0;
+  transition: all 0.3s ease; 
+}
+
+.moreOnInsta:hover .insta-item-hover {
+  visibility: visible; 
+  opacity: 1; 
+}
+.item-hover{
+  position: absolute;
+  top: 60%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  visibility: hidden; 
+  opacity: 0;
+  transition: all 0.3s ease; 
+}
+.arrival-item:hover .item-hover{
+  visibility: visible; 
+  opacity: 1;
+}
+.arrival-item{
+   position: relative; 
+overflow: hidden; 
+}
+.item-hover i{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  
+  background-color:rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.arrival-item .item-content .add-to-cart {
+   
+  visibility: hidden; 
+  transition: all 0.3s ease;
+}
+
+.arrival-item .item-content .price {
+ display: block; 
+  visibility: visible; 
+  transition: all 0.3s ease; 
+}
+
+
+.arrival-item:hover .item-content .price {
+ display: none !important; 
+  visibility: hidden; 
+}
+
+.arrival-item:hover .item-content .add-to-cart {
+  display:block !important; 
+  visibility: visible; 
+  color:var(--mainColor);
+}

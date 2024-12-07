@@ -1,580 +1,984 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!--fontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--custom css-->
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-light pt-4 pb-4">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png.webp" alt="logo" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-                    <li class="nav-item ">
-                       <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">About</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">Services</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">shop</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">pages</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">blog</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-uppercase" href="#">contact</a>
-                    </li>
-                    
-                </ul>
-                <div class="end-options d-flex justify-content-between">
-
-                    <div class="search ">
-                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-                    </div>
-
-                    <div class="heart d-flex flex-row gap-1">
-                       <a href="#"> <i class="fa-regular fa-heart fa-xl text-dark"></i></a>
-                        <span class="counterFont">(05)</span>
-                    </div>
-                    <div class="shoppingBag d-flex flex-row gap-1">
-                        <a href="#"><i class="fa-solid fa-bag-shopping fa-xl text-dark"></i></a>
-                        <span class="counterFont">(01)</span>
-                    </div>
-                    <div class="price"><span class="totalPrice text-mainColor">$65.0</span></div>
-
-
-                </div>
-                
-
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/img/logo.png.webp" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">contact</a>
+            </li>
+          </ul>
+          <div class="end-options d-flex justify-content-between gap-4">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
             </div>
+
+            <div class="heart d-flex flex-row gap-1">
+              <a href="#">
+                <i class="fa-regular fa-heart fa-xl text-dark"></i
+              ></a>
+              <span class="counterFont">(05)</span>
+            </div>
+            <div class="shoppingBag d-flex flex-row gap-1">
+              <a href="#"
+                ><i class="fa-solid fa-bag-shopping fa-xl text-dark"></i
+              ></a>
+              <span class="counterFont">(01)</span>
+            </div>
+            <div class="price">
+              <span class="totalPrice text-mainColor">$65.0</span>
+            </div>
+
+                      
+          </div>
         </div>
+      </div>
     </nav>
     <main>
-        <section>
-            <div id="carouselExampleSlidesOnly" class="carousel slide vh-100" data-bs-ride="carousel">
-                   
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active owl-dot" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" class="owl-dot" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner h-100">
-                        <div class="carousel-item active h-100"
-                        style="background-image: url('./assets/img/slider/hero-1.jpg.webp');">
-                                <div class="container">
-                                    <div class="content col-lg-5">
-                                        <span>Fresh Flower & Gift Shop</span>
-                                        <h2>Making beautiful flowers a part of your life.</h2>
-                                        <a class="primary-btn" href="#">Shop now</a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="carousel-item h-100"
-                        style="background-image: url('./assets/img/slider/hero-2.jpg.webp');">
-                                <div class="container">
-                                        <div class="content">
-                                            <span>Fresh Flower & Gift Shop</span>
-                                            <h2>Making beautiful flowers a part of your life.</h2>
-                                            <a class="primary-btn" href="#">Shop now</a>
-                                        </div>
-                                </div> 
-                        </div>
-                    </div>
-                      
-            </div>     
-        </section>
-        <section>
-                <div class="benefits pt-5 pb-5 container">
-                    <div class="row">
-                        <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
-                            <div class="bebefit-icon">
-                                <img src="./assets/img/benefits/benefit-1.png.webp" alt="benefit-1"/>
-                            </div>
-                           <div class="benefit-content">
-                            <h4>100% Freshness</h4>
-                            <p>Most people are unaware of the less common flower</p>
-                           </div>
-                           
-                        </div>
-                        <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
-                            <div class="bebefit-icon">
-                                <img src="./assets/img/benefits/benefit-2.png.webp" alt="benefit-1"/>
-                            </div>
-                           <div class="benefit-content">
-                            <h4>Made by artist</h4>
-                            <p>Most people are unaware of the less common flower</p>
-                           </div>
-                           
-                        </div>
-                        <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
-                            <div class="bebefit-icon">
-                                <img src="./assets/img/benefits/benefit-3.png.webp" alt="benefit-1"/>
-                            </div>
-                           <div class="benefit-content">
-                            <h4>Own courier</h4>
-                            <p>Most people are unaware of the less common flower</p>
-                           </div>
-                           
-                        </div>
-                        <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
-                            <div class="bebefit-icon">
-                                <img src="./assets/img/benefits/benefit-4.png.webp" alt="benefit-1"/>
-                            </div>
-                           <div class="benefit-content">
-                            <h4>100% Freshness</h4>
-                            <p>Most people are unaware of the less common flower</p>
-                           </div>
-                           
-                        </div>
-                    </div>
-
+      <section>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide vh-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlidesOnly"
+              data-bs-slide-to="0"
+              class="active owl-dot"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleSlidesOnly"
+              data-bs-slide-to="1"
+              class="owl-dot"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div
+              class="carousel-item active h-100"
+              style="
+                background-image: url('./assets/img/slider/hero-1.jpg.webp');
+              "
+            >
+              <div class="container">
+                <div class="content col-lg-5">
+                  <span>Fresh Flower & Gift Shop</span>
+                  <h2>Making beautiful flowers a part of your life.</h2>
+                  <a class="primary-btn" href="#">Shop now</a>
                 </div>
-         
-        </section>
-        <section>
-            <div class="catagories">
-                <div class="container">
-                    <div class="row">
-                        <div class=" col-lg-3 col-md-6">
-                            <div class="catagory-item set-bg" style="background-image: url('./assets/img/catagories/categories-1.jpg.webp'); ">
-                                <div class="catagory-text">
-                                    <h4>Fresh Flower</h4>
-                                    <span>( 25 items )</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-6">
-                            <div class="catagory-item set-bg" style="background-image: url('./assets/img/catagories/categories-2.jpg.webp'); ">
-                                <div class="catagory-text">
-                                    <h4>Succulent plants</h4>
-                                    <span>( 162 items )</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-6">
-                            <div class="catagory-item set-bg" style="background-image: url('./assets/img/catagories/categories-3.jpg.webp'); ">
-                                <div class="catagory-text">
-                                    <h4>Cactus plants</h4>
-                                    <span>( 58 items )</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-6">
-                            <div class="catagory-item set-bg" style="background-image: url('./assets/img/catagories/categories-4.jpg.webp'); ">
-                                <div class="catagory-text">
-                                    <h4>Funiture tree</h4>
-                                    <span>( 25 items )</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="about-us pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="about-title col-lg-4">
-                            <span>About us</span>
-                            <h2>We provide all kinds of fresh flower services</h2>
-                        </div>
-                        <div class="about-content col-lg-7 offset-lg-1">
-                            <p>For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada, growing flowers that can
-                                be dried and incorporated into late fall and winter floral arrangements has been a
-                                game-changer. During her growing season, this farmer-florist relies on a vivid palette of
-                            annuals, perennials and ornamental grasses to supply her studio.</p>
-                        </div>
-                    </div>
-                    <div class="row pt-5">
-                        <div class="about-vedio col-lg-7 set-bg" style="background-image: url('./assets/img/aboutus/about-video.jpg.webp');">
-                            <a href="#"><i class="fa-solid fa-play"></i></a>
-                        </div>
-                        <div class="about-text col-lg-5">
-                            <span class="text-mainColor">Slow Flowers’ Floral Insights</span>
-                            <h2>Dried flowers are having a renaissance</h2>
-                            <p>This awareness has been stimulated by sustainable sourcing practices and the desire on the
-                                part of North American flower growers to “extend the season” beyond the last frost.
-                            </p>
-                            <a href="#" class="primary-btn">Contact us</a>
-                        </div>
-                    </div>
+            <div
+              class="carousel-item h-100"
+              style="
+                background-image: url('./assets/img/slider/hero-2.jpg.webp');
+              "
+            >
+              <div class="container">
+                <div class="content">
+                  <span>Fresh Flower & Gift Shop</span>
+                  <h2>Making beautiful flowers a part of your life.</h2>
+                  <a class="primary-btn" href="#">Shop now</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="arrival pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="arrival-title cpl-lg-12 text-center">
-                            <span>Our flower</span>
-                            <h2>New Arrivals</h2>
-                        </div>
-                        <div class="filter">
-                            <nav class="mb-5">
-                                <div
-                                  class="nav justify-content-center nav-tabs"
-                                  id="nav-tab"
-                                  role="tablist"
-                                >
-                                  <button
-                                    class="nav-link active"
-                                    id="nav-All-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-All"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-All"
-                                    aria-selected="true"
-                                  >
-                                    All
-                                  </button>
-                                  <button
-                                    class="nav-link"
-                                    id="nav-Bouquet-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-Bouquet"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-Bouquet"
-                                    aria-selected="false"
-                                  >
-                                  Bouquet
-                                  </button>
-                                  <button
-                                    class="nav-link"
-                                    id="nav-Flowerbox-tab"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#nav-Flowerbox"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="nav-Flowerbox"
-                                    aria-selected="false"
-                                  >
-                                  Flower box
-                                  </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="benefits pt-5 pb-5 container">
+          <div class="row">
+            <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
+              <div class="bebefit-icon">
+                <img
+                  src="./assets/img/benefits/benefit-1.png.webp"
+                  alt="benefit-1"
+                />
+              </div>
+              <div class="benefit-content">
+                <h4>100% Freshness</h4>
+                <p>Most people are unaware of the less common flower</p>
+              </div>
+            </div>
+            <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
+              <div class="bebefit-icon">
+                <img
+                  src="./assets/img/benefits/benefit-2.png.webp"
+                  alt="benefit-1"
+                />
+              </div>
+              <div class="benefit-content">
+                <h4>Made by artist</h4>
+                <p>Most people are unaware of the less common flower</p>
+              </div>
+            </div>
+            <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
+              <div class="bebefit-icon">
+                <img
+                  src="./assets/img/benefits/benefit-3.png.webp"
+                  alt="benefit-1"
+                />
+              </div>
+              <div class="benefit-content">
+                <h4>Own courier</h4>
+                <p>Most people are unaware of the less common flower</p>
+              </div>
+            </div>
+            <div class="benefit-item d-flex gap-4 col-lg-3 col-md-6">
+              <div class="bebefit-icon">
+                <img
+                  src="./assets/img/benefits/benefit-4.png.webp"
+                  alt="benefit-1"
+                />
+              </div>
+              <div class="benefit-content">
+                <h4>100% Freshness</h4>
+                <p>Most people are unaware of the less common flower</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="catagories">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="catagory-item set-bg"
+                  style="
+                    background-image: url('./assets/img/catagories/categories-1.jpg.webp');
+                  "
+                >
+                  <div class="catagory-text">
+                    <h4>Fresh Flower</h4>
+                    <span>( 25 items )</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="catagory-item set-bg"
+                  style="
+                    background-image: url('./assets/img/catagories/categories-2.jpg.webp');
+                  "
+                >
+                  <div class="catagory-text">
+                    <h4>Succulent plants</h4>
+                    <span>( 162 items )</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="catagory-item set-bg"
+                  style="
+                    background-image: url('./assets/img/catagories/categories-3.jpg.webp');
+                  "
+                >
+                  <div class="catagory-text">
+                    <h4>Cactus plants</h4>
+                    <span>( 58 items )</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div
+                  class="catagory-item set-bg"
+                  style="
+                    background-image: url('./assets/img/catagories/categories-4.jpg.webp');
+                  "
+                >
+                  <div class="catagory-text">
+                    <h4>Funiture tree</h4>
+                    <span>( 25 items )</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="about-us pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="about-title col-lg-4">
+                <span>About us</span>
+                <h2>We provide all kinds of fresh flower services</h2>
+              </div>
+              <div class="about-content col-lg-7 offset-lg-1">
+                <p>
+                  For Heather Henson, of Boreal Blooms in Cold Lake, Alberta,
+                  Canada, growing flowers that can be dried and incorporated
+                  into late fall and winter floral arrangements has been a
+                  game-changer. During her growing season, this farmer-florist
+                  relies on a vivid palette of annuals, perennials and
+                  ornamental grasses to supply her studio.
+                </p>
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div
+                class="about-vedio col-lg-7 set-bg"
+                style="
+                  background-image: url('./assets/img/aboutus/about-video.jpg.webp');
+                "
+              >
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+              </div>
+              <div class="about-text col-lg-5">
+                <span class="text-mainColor"
+                  >Slow Flowers’ Floral Insights</span
+                >
+                <h2>Dried flowers are having a renaissance</h2>
+                <p>
+                  This awareness has been stimulated by sustainable sourcing
+                  practices and the desire on the part of North American flower
+                  growers to “extend the season” beyond the last frost.
+                </p>
+                <a href="#" class="primary-btn">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="arrival pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="arrival-title cpl-lg-12 text-center">
+                <span>Our flower</span>
+                <h2>New Arrivals</h2>
+              </div>
+              <div class="filter">
+                <nav class="mb-5">
+                  <div
+                    class="nav justify-content-center nav-tabs"
+                    id="nav-tab"
+                    role="tablist"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="nav-All-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-All"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-All"
+                      aria-selected="true"
+                    >
+                      All
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-Bouquet-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-Bouquet"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-Bouquet"
+                      aria-selected="false"
+                    >
+                      Bouquet
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-Flowerbox-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-Flowerbox"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-Flowerbox"
+                      aria-selected="false"
+                    >
+                      Flower box
+                    </button>
 
-                                  <button
-                                  class="nav-link"
-                                  id="nav-Flowershelf-tab"
-                                  data-bs-toggle="tab"
-                                  data-bs-target="#nav-Flowershelf"
-                                  type="button"
-                                  role="tab"
-                                  aria-controls="nav-Flowershelf"
-                                  aria-selected="false"
-                                >
-                                Flower shelf
-                                </button>
-                                <button
-                                class="nav-link"
-                                id="nav-Basketofflower-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#nav-Basketofflower"
-                                type="button"
-                                role="tab"
-                                aria-controls="nav-Basketofflower"
-                                aria-selected="false"
-                              >
-                              Basket of flower
-                              </button>
-                              <button
-                                class="nav-link"
-                                id="nav-Giftcombos-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#nav-Giftcombos"
-                                type="button"
-                                role="tab"
-                                aria-controls="nav-Giftcombos"
-                                aria-selected="false"
-                              >
-                              Gift combos
-                              </button>
-                                </div>
-                            </nav>
-                              <div class="tab-content" id="nav-tabContent">
-                                <div
-                                  class="tab-pane fade show active"
-                                  id="nav-All"
-                                  role="tabpanel"
-                                  aria-labelledby="nav-All-tab"
-                                  tabindex="0"
-                                >
-                                  <div class="container-fluid">
-                                    <div class="row gy-3">
-                                      <div class="col-md-3">
-                                        <img
-                                          src="./assets/img/arrival/product-1.jpg"
-                                          class="img-fluid"
-                                        />
-                                        <div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img
-                                          src="./assets/img/arrival/product-2.jpg"
-                                          class="img-fluid"
-                                        /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img
-                                          src="./assets/img/arrival/product-3.jpg"
-                                          class="img-fluid"
-                                        /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-4.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-5.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-6.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-7.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-8.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-9.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-10.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                    <button
+                      class="nav-link"
+                      id="nav-Flowershelf-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-Flowershelf"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-Flowershelf"
+                      aria-selected="false"
+                    >
+                      Flower shelf
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-Basketofflower-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-Basketofflower"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-Basketofflower"
+                      aria-selected="false"
+                    >
+                      Basket of flower
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-Giftcombos-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-Giftcombos"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-Giftcombos"
+                      aria-selected="false"
+                    >
+                      Gift combos
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-All"
+                    role="tabpanel"
+                    aria-labelledby="nav-All-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-1.jpg"
+                            class="img-fluid"
+                          />
+                          <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
                         </div>
-                        <div class="tab-content" id="nav-tabContent">
-                        <div
-                                class="tab-pane fade"
-                                id="nav-Bouquet"
-                                role="tabpanel"
-                                aria-labelledby="nav-Bouquet-tab"
-                                tabindex="0"
-                            >
-                                <div class="container-fluid">
-                                <div class="row gy-3">
-                                    <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-1.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./assets/img/arrival/product-6.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </div>
-                         </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-2.jpg"
+                            class="img-fluid"
+                          />
+                          <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
                         </div>
-                        <div class="tab-content" id="nav-tabContent">
-                         <div
-                         class="tab-pane fade"
-                         id="nav-Flowerbox"
-                         role="tabpanel"
-                         aria-labelledby="nav-Flowerbox-tab"
-                         tabindex="0"
-                     >
-                         <div class="container-fluid">
-                         <div class="row gy-3">
-                             <div class="col-md-3">
-                                 <img src="./assets/img/arrival/product-2.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                             </div>
-                             <div class="col-md-3">
-                                 <img src="./assets/img/arrival/product-7.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                             </div>
-                             
-                         </div>
-                         </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-3.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-4.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-5.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-6.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-7.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-8.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-9.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-10.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
                   <div
-                         class="tab-pane fade"
-                         id="nav-Flowershelf"
-                         role="tabpanel"
-                         aria-labelledby="nav-Flowershelf-tab"
-                         tabindex="0"
-                     >
-                         <div class="container-fluid">
-                         <div class="row gy-3">
-                             <div class="col-md-3">
-                                 <img src="./assets/img/arrival/product-3.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                             </div>
-                             <div class="col-md-3">
-                                 <img src="./assets/img/arrival/product-8.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                             </div>
-                             
-                         </div>
-                         </div>
+                    class="tab-pane fade"
+                    id="nav-Bouquet"
+                    role="tabpanel"
+                    aria-labelledby="nav-Bouquet-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-1.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-6.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
-                    <div
-                           class="tab-pane fade"
-                           id="nav-Basketofflower"
-                           role="tabpanel"
-                           aria-labelledby="nav-Basketofflower-tab"
-                           tabindex="0"
-                       >
-                           <div class="container-fluid">
-                           <div class="row gy-3">
-                               <div class="col-md-3">
-                                   <img src="./assets/img/arrival/product-4.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                               </div>
-                               <div class="col-md-3">
-                                   <img src="./assets/img/arrival/product-9.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                            <h5>Fly Me To The Moon</h5>
-                                            <sapn class="fw-bold">$27.50</sapn>
-                                            <a hidden>Add to cart</a>
-                                        </div>
-                               </div>
-                               
-                           </div>
-                           </div>
-                    </div>
-                  </div>
-                  <div class="tab-content" id="nav-tabContent">
-                    <div
-                           class="tab-pane fade"
-                           id="nav-Giftcombos"
-                           role="tabpanel"
-                           aria-labelledby="nav-Giftcombos-tab"
-                           tabindex="0"
-                       >
-                           <div class="container-fluid">
-                           <div class="row gy-3">
-                               <div class="col-md-3">
-                                   <img src="./assets/img/arrival/product-5.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                    <h5>Fly Me To The Moon</h5>
-                                    <sapn class="fw-bold">$27.50</sapn>
-                                    <a hidden>Add to cart</a>
-                                </div>
-                               </div>
-                               <div class="col-md-3">
-                                   <img src="./assets/img/arrival/product-10.jpg" class="img-fluid" /><div class="item-content text-center pt-4 pb-4">
-                                    <h5>Fly Me To The Moon</h5>
-                                    <sapn class="fw-bold">$27.50</sapn>
-                                    <a hidden>Add to cart</a>
-                                </div>
-                               </div>
-                               
-                           </div>
-                           </div>
-                    </div>
-                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-Flowerbox"
+                    role="tabpanel"
+                    aria-labelledby="nav-Flowerbox-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-2.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
                         </div>
-                     </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-7.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade"
+                    id="nav-Flowershelf"
+                    role="tabpanel"
+                    aria-labelledby="nav-Flowershelf-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-3.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-8.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade"
+                    id="nav-Basketofflower"
+                    role="tabpanel"
+                    aria-labelledby="nav-Basketofflower-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-4.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-9.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade"
+                    id="nav-Giftcombos"
+                    role="tabpanel"
+                    aria-labelledby="nav-Giftcombos-tab"
+                    tabindex="0"
+                  >
+                    <div class="container-fluid">
+                      <div class="row gy-3">
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-5.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                        <div class="arrival-item col-md-3">
+                          <img
+                            src="./assets/img/arrival/product-10.jpg"
+                            class="img-fluid"
+                          /> <div class="item-hover d-flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass  fa-lg"></i>
+                            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                          </div>
+                          <div class="item-content text-center pt-4 pb-4">
+                            <h5>Fly Me To The Moon</h5>
+                            <sapn class="fw-bold price">$27.50</sapn>
+                            <a class="add-to-cart d-none">Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section >
+        <div class="custom-flower vh-100 " style="background-image:url('./assets/img/custom-flower.jpg') ;background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-attachment: sticky;
+        ">
+            <div class="container">
+                <div class="row">
+                    <div class="custom-flower-text  d-flex flex-column col-lg-6">
+                        <span>Custom flower</span>
+                        <h2>Let our flowers make your party more perfect.</h2>                       
+                            <a class="primary-btn mb-2 custom-btn text-center" href="#">Order Now</a>
+                            <a class="primary-btn white-btn custom-btn text-center" href="#">Contact Us</a> 
+                    </div>
                 </div>
             </div>
-        </section>
+        
+        </div>
+      </section>
+      <section>
+        <div class="container latest-post mt-5">
+            <div class="row">
+                <div class="latest-post-title  col-lg-7 col-md-6">
+                    <span>Latest posts</span>
+                    <h2>Florist tricks</h2>
+                </div>
+                <div class=" all-btn d-flex flex-row-reverse align-items-center col-lg-5 col-md-6">
+                    <a class=" primary-btn border-btn" href="#">View all posts</a>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./assets/img/posts/blog-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="label">
+                                <span>Trend news</span>
+                            </div>
+                            <h3><a href="#">8 Romantic Gifts to Celebrate Your Wedding Anniversary</a></h3>
+                            <p>Flowers have a language all their own. In Victorian times, receiving a…</p>
+                            <span>MAY 22, 2020</span>
+                        </div>
+                      </div>
+                
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" >
+                        <img src="./assets/img/posts/blog-2.jpg" class="card-img-top" alt="...">
+                        
+                        <div class="card-body">
+                            <div class="label">
+                                <span>Tips & Idea</span>
+                            </div>
+                            <h3><a href="#">Red Rose - Flower of love of Greek Mythology</a></h3>
+                            <p>Flowers have a language all their own. In Victorian times, receiving a…</p>
+                            <span>MAY 22, 2020</span>
+                        </div>
+                      </div>
+                
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" >
+                        <img src="./assets/img/posts/blog-3.jpg" class="card-img-top" alt="...">
+                       
+                        <div class="card-body">
+                            <div class="label">
+                                <span>DIY & Craf</span>
+                            </div>
+                            <h3><a href="#">Beautiful Mandalas Made From Flowers by Kathy Klein</a></h3>
+                            <p>Flowers have a language all their own. In Victorian times, receiving a…</p>
+                            <span>MAY 22, 2020</span>
+                        </div>
+                      </div>
+                
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="testimonial mt-5">
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner vh-100">
+                  <div class="carousel-item active vh-100" style="background-image: url('./assets/img/testimonial.jpg');">
+                   
+                    
+                    <div class="carousel-caption">
+                        <img src="./assets/img/quote.png"/>
+                        <p>“I just wanted to say thank you for making such gorgeous arrangements for our
+                            birthday celebration. I couldn’t get over how perfect they were for the
+                            party. You did a fantastic job, and I appreciate it very much”</p>
+                        <h4 class="text-dark">Alejandro Houston</h4>
+                        <span class="text-uppercase">Businessman</span>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100" style="background-image: url('./assets/img/testimonial.jpg');">
+                   
+                    <div class="carousel-caption ">
+                        <img src="./assets/img/quote.png"/>
+                        <p>“I just wanted to say thank you for making such gorgeous arrangements for our
+                            birthday celebration. I couldn’t get over how perfect they were for the
+                            party. You did a fantastic job, and I appreciate it very much”</p>
+                        <h4 class="text-dark">Alejandro Houston</h4>
+                        <span class="text-uppercase">Businessman</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-100" style="background-image: url('./assets/img/testimonial.jpg');">
+                    
+                    <div class="carousel-caption ">
+                        <img src="./assets/img/quote.png"/>
+                        <p>“I just wanted to say thank you for making such gorgeous arrangements for our
+                            birthday celebration. I couldn’t get over how perfect they were for the
+                            party. You did a fantastic job, and I appreciate it very much”</p>
+                        <h4 class="text-dark">Alejandro Houston</h4>
+                        <span class="text-uppercase">Businessman</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+      </section>
+      <section>
+        
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="moreOnInstaTitle col-lg-12 d-flex gap-2">
+                      
+                        <div class="moreOnInsta  d-flex align-items-center justify-content-center" style="background-image: url('./assets/img/moreOnInsta/insta-1.jpg');height: 350px;width: calc(20% - 5px);">
+                            <div class="insta-item-hover bg-light text-center ">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #f45d96;"></i>                   
+                                <h6>Follow us <a href="#">@florist</a></h6>
+                            </div>
+
+                        </div>
+                        <div class="moreOnInsta " style="background-image: url('./assets/img/moreOnInsta/insta-2.jpg');height: 350px;width: calc(20% - 5px);">
+                            <div class="insta-item-hover bg-light text-center ">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #f45d96;"></i>                   
+                                <h6>Follow us <a href="#">@florist</a></h6>
+                            </div>
+
+                        </div>
+                        <div class="moreOnInsta " style="background-image: url('./assets/img/moreOnInsta/insta-3.jpg');height: 350px;width: calc(20% - 5px);">
+                            <div class="insta-item-hover bg-light text-center ">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #f45d96;"></i>                   
+                                <h6>Follow us <a href="#">@florist</a></h6>
+                            </div>
+
+                        </div>
+                        <div class="moreOnInsta " style="background-image: url('./assets/img/moreOnInsta/insta-4.jpg');height: 350px;width: calc(20% - 5px);">
+                            <div class="insta-item-hover bg-light text-center ">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #f45d96;"></i>                   
+                                <h6>Follow us <a href="#">@florist</a></h6>
+                            </div>
+
+                        </div>
+                        <div class="moreOnInsta " style="background-image: url('./assets/img/moreOnInsta/insta-5.jpg');height: 350px;width: calc(20% - 5px);">
+                            <div class="insta-item-hover bg-light text-center ">
+                                <i class="fa-brands fa-instagram fa-lg" style="color: #f45d96;"></i>                   
+                                <h6>Follow us <a href="#">@florist</a></h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+      </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script src="./assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
